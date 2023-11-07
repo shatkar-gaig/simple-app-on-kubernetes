@@ -38,7 +38,7 @@ You will have to restart port forward command after making any changes as pods a
 sudo -E kwt net start
 ```
 
-and open [`http://simple-app.default.svc.cluster.local/`](http://simple-app.default.svc.cluster.local/).
+and open [`http://simple-app.kc-managed-apps.svc.cluster.local/`](http://simple-app.kc-managed-apps.svc.cluster.local/).
 
 ### Step 1b: Modifying application configuration
 
@@ -78,7 +78,7 @@ kapp deploy -a simple-app -c -f <(ytt -f config-step-2-template/ -f config-step-
 
 Requires ytt v0.13.0+.
 
-Introduces [use of multiple data values](https://carvel.dev/ytt/docs/latest/ytt-data-values/) to show layering of configuration for different environment without modifying default `values.yml`.
+Introduces [use of multiple data values](https://carvel.dev/ytt/docs/latest/ytt-data-values/) to show layering of configuration for different environment without modifying kc-managed-apps `values.yml`.
 
 ```bash
 kapp deploy -a simple-app -c -f <(ytt -f config-step-2-template/ -f config-step-2b-multiple-data-values/)
