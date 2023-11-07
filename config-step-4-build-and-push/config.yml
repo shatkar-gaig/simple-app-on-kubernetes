@@ -30,7 +30,7 @@ spec:
     spec:
       containers:
       - name: simple-app
-        image: docker.io/dkalinin/k8s-simple-app
+        image: acrnpiplatopstapeus201.azurecr.io/dkalinin/k8s-simple-app
         env:
         - name: HELLO_MSG
           value: #@ data.values.hello_msg

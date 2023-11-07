@@ -3,7 +3,7 @@
 apiVersion: kbld.k14s.io/v1alpha1
 kind: Config
 sources:
-- image: docker.io/dkalinin/k8s-simple-app
+- image: acrnpiplatopstapeus201.azurecr.io/dkalinin/k8s-simple-app
   path: .
 
 #@ if/end data.values.push_images_repo:
@@ -11,5 +11,5 @@ sources:
 apiVersion: kbld.k14s.io/v1alpha1
 kind: Config
 destinations:
-- image: docker.io/dkalinin/k8s-simple-app
+- image: acrnpiplatopstapeus201.azurecr.io/dkalinin/k8s-simple-app
   newImage: #@ data.values.push_images_repo

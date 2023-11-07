@@ -2,5 +2,5 @@
 apiVersion: kbld.k14s.io/v1alpha1
 kind: Config
 sources:
-- image: docker.io/dkalinin/k8s-simple-app
+- image: acrnpiplatopstapeus201.azurecr.io/dkalinin/k8s-simple-app
   path: .
